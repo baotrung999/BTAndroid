@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    tools:context=".MainActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#1B668E"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#D1C23D"
+        android:text="SỐ HỌC CƠ BẢN"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:paddingTop="50px"
+        />
+    //số A
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tvSoA"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Số A"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edSoA" />
+
+    </LinearLayout>
+    //Số B
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tvSoB"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Số B"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edSoB"
+            />
+
+    </LinearLayout>
+    //phép tính
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btnCong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="XulyCong"
+            android:text="+" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:id="@+id/btnTru"
+            android:onClick="XulyTru"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:id="@+id/btnNhan"
+            android:onClick="XulyNhan"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:id="@+id/btnChia"
+            android:onClick="XulyChia"/>
+
+    </LinearLayout>
+    //Kết quả
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kết Quả:"
+        android:id="@+id/ketqua"
+        android:textColor="@color/white"
+        android:textSize="25dp"/>
+</LinearLayout>

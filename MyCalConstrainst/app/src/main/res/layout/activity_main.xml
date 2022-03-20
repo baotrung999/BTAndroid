@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B668E"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#D1C23D"
+        android:paddingTop="50px"
+        android:text="SỐ HỌC CƠ BẢN"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="101dp">
+        <TextView
+            android:id="@+id/tvSoA"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Số A"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/edSoA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="147dp"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/tvSoB"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Số B"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edSoB"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="200dp"
+        tools:ignore="MissingConstraints">
+        <Button
+            android:id="@+id/btnCong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="XulyCong"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/btnTru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="XulyTru"
+            android:text="-"
+            tools:layout_editor_absoluteX="104dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <Button
+            android:id="@+id/btnNhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="XulyNhan"
+            android:text="*"
+            tools:layout_editor_absoluteX="208dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <Button
+            android:id="@+id/btnChia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="XulyChia"
+            android:text="/"
+            tools:layout_editor_absoluteX="319dp"
+            tools:layout_editor_absoluteY="0dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    //Kết quả
+
+    <TextView
+        android:id="@+id/ketqua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kết Quả:"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="257dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
