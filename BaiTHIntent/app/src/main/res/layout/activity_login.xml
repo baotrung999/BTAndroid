@@ -39,9 +39,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="33dp"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="15dp"
         android:text="Username"
         android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/edtUsername"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -50,9 +52,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="33dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="17dp"
         android:text="Password"
         android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/edtPass"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/uname" />
 
@@ -61,9 +65,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="33dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="15dp"
         android:text="UserEmail"
         android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/edtMail"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
@@ -71,35 +77,62 @@
         android:id="@+id/edtUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="31dp"
         android:layout_marginEnd="63dp"
+        android:layout_marginBottom="27dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/edtPass"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/uname"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
         android:id="@+id/edtPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
         android:layout_marginTop="27dp"
         android:layout_marginEnd="63dp"
+        android:layout_marginBottom="26dp"
         android:ems="10"
         android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/edtMail"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/password"
         app:layout_constraintTop_toBottomOf="@+id/edtUsername" />
 
     <EditText
         android:id="@+id/edtMail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="63dp"
         android:ems="10"
+        android:importantForAutofill="no"
         android:inputType="textEmailAddress"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtPass"
-        android:importantForAutofill="no" />
+        app:layout_constraintStart_toEndOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/edtPass" />
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="167dp"
+        android:text="Xác Nhận"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtMail" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
